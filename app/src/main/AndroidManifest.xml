@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.ft_hangouts">
-    <!--android:theme="@style/AppTheme"-->
+    package="com.example.ft_hangouts"
+    android:theme="@style/AppTheme">
+
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo42"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/logo42_round"
         android:supportsRtl="true"
-        tools:ignore="GoogleAppIndexingWarning">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        >
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
