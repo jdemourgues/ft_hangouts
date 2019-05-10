@@ -16,6 +16,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.ft_hangouts.controller.MainActivity;
+import com.example.ft_hangouts.model.DBContacts;
+
 public class DetailContacts extends AppCompatActivity {
 
     private DBContacts mydb ;
@@ -154,7 +157,7 @@ public class DetailContacts extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "Deleted Successfully",
                                         Toast.LENGTH_SHORT).show();
                                 Log.i("DATABASE", "Deleted Successufally");
-                                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(intent);
                             }
                         })

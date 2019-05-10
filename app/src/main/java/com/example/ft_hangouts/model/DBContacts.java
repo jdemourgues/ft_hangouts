@@ -1,4 +1,4 @@
-package com.example.ft_hangouts;
+package com.example.ft_hangouts.model;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.util.Log;
+
+import com.example.ft_hangouts.ListContacts;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.example.ft_hangouts;
+package com.example.ft_hangouts.controller;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -15,6 +15,11 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 
 
+import com.example.ft_hangouts.model.DBContacts;
+import com.example.ft_hangouts.DetailContacts;
+import com.example.ft_hangouts.ListAdapter;
+import com.example.ft_hangouts.ListContacts;
+import com.example.ft_hangouts.R;
 
 import java.util.List;
 
@@ -45,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 Bundle dataBundle = new Bundle();
                 dataBundle.putInt("id", 0);
 
-                Intent intent = new Intent(getApplicationContext(),DetailContacts.class);
+                Intent intent = new Intent(getApplicationContext(), DetailContacts.class);
 
                 intent.putExtras(dataBundle);
                 startActivity(intent);
